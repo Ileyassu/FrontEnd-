@@ -4,7 +4,7 @@ export function HomePage() {
   const header = Header({
     title: "Ft_Trescendence",
     links : [
-      {name : "Home", url : "/"},
+      {name : "Login", url: "login"},
       {name : "Signup", url : "signup"}
     ]
   });
