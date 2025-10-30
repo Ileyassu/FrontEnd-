@@ -7,6 +7,7 @@
  * 3. Handling browser back/forward buttons
  * 4. Intercepting link clicks for smooth navigation
  */
+
 export class Router {
   // Store all registered routes: path -> component function
   private routes: Map<string, () => HTMLElement> = new Map();
