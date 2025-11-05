@@ -1,28 +1,24 @@
 import { Header } from "../components/Header";
+import { HeroBackground } from "../components/BgContainer";
 
 export function HomePage() {
   const header = Header({
     title: "Ft_Trescendence",
     links : [
-      {name : "Login", url: "login"},
-      {name : "Signup", url : "signup"}
+      {name : "Signup", url : "signup"},
+      {name : "Login", url: "login"}
     ]
   });
+  const heroBg = HeroBackground();
   const main = (
-    <div class="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center p-4">
-      <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full">
-        <h1 class="text-4xl font-bold text-gray-800 mb-4">
-          Welcome Home! 🏠
-        </h1>
-        <p class="text-gray-600 mb-6">
-          Get ready for transcendence
-        </p>
-        <a 
-          href="/signup"
-          class="block w-full bg-purple-600 hover:bg-purple-700 text-white text-center font-bold py-3 px-6 rounded-lg transition-colors"
-        >
-          Sign Up →
-        </a>
+    <div class="min-h-screen flex items-center px-8 lg:px-16">
+      <div class="w-full">
+        <div class="text-white space-y-6 max-w-2xl">
+          <h1 class="pl-20 text-9xl lg:text-9xl font-normal">Let's Play Together...</h1>
+          <p class="pl-25 pt-10 pr-30 font-bold text-[#878787]">Step into the ultimate ping pong 
+              experience where every serve
+                sizzles and every rally heats up.</p>
+        </div>
       </div>
     </div>
   ) as HTMLElement;
@@ -32,6 +28,7 @@ export function HomePage() {
     </div>
   )
   container.append(header);
+  container.append(heroBg);
   container.append(main);
   return container;
 }

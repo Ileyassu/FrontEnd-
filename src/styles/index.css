@@ -4,14 +4,15 @@
 
 
 @theme {
-    --color-primary: #00D9FF;
+    --color-primary: #00D9FF; /*zr9*/
     --color-secondary: #F0F0F0;
     --color-primary-background: #000000;
-    --color-secondary-background: #121212;
-    --color-primary-text: #F0F0F0;
+    --color-secondary-background: #121212; /*k7el*/
+    --color-primary-text: #1D1D1D;
     --color-secondary-text: #878787;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: #121212;
 }

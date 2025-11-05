@@ -1,4 +1,5 @@
-
+import {LoginButton} from "./LoginButton"
+import { SignupButton } from "./SignupButton";
 export interface HeaderProps {
     title ?: string;
     links ?: { name : string, url : string }[];
@@ -9,17 +10,17 @@ export function Header (props : HeaderProps = {}) : HTMLElement {
     const links = props.links || [];
 
     return (
-        <header>
-            <nav class="px-35 mx-auto flex items-center justify-between">
+        <header class="absolute top-0 left-0 right-0 z-50 bg-transparent">
+            <nav class="px-35 py-15 mx-auto flex items-center justify-between">
                 <a href="/">
                     <img class=" w-55" src= "/media/logo/logo.png" alt="logo"/>
                 </a> 
                 <div class="flex gap-6">
                     {links.map(link => (
                         link.name.toLowerCase() === "login" ? (
-                            <a href="/login" class="text-primary border-solid border-1 border-primary px-10 py-2 rounded-lg">{link.name}</a>
+                            <LoginButton class="flex flex-row c"/>
                         ) : (
-                            <a href=""></a>
+                            <SignupButton/>
                         )
                     ))}
                 </div>
