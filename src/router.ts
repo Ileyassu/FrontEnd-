@@ -18,7 +18,7 @@ export class Router {
   // Custom 404 component (default shows "Page Not Found")
   private notFoundComponent: () => HTMLElement = () => {
     const el = document.createElement('div');
-    el.innerHTML = '<h1>404 - Page Not Found</h1>';
+    el.innerHTML = '<h1 style="color:white; font-size:60px; padding:20%">404 - Page Not Found</h1>';
     return el;
   };
 
