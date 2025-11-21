@@ -16,3 +16,16 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #121212;
 }
+
+@keyframes grid {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4rem);
+  }
+}
+
+.animate-grid {
+  animation: grid 20s linear infinite;
+}
