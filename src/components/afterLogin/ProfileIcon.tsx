@@ -3,7 +3,7 @@ import { createElement, User, Settings, LogOut, Trophy, Mail } from "lucide";
 export function ProfileIcon() {
   const container = (
     <div class="relative group">
-      <div class= "flex flex-row justify-center items-center cursor-pointer">
+      <div class="flex flex-row justify-center items-center cursor-pointer">
         <a class="mr-4" href="/profile">
           <img
             src="/media/avatar/avatar.png"
@@ -28,9 +28,9 @@ export function ProfileIcon() {
       </div>
 
       {/* Dropdown Menu */}
-      <div class="absolute right-0 top-full mt-2 w-64 bg-gray-50 backdrop-blur-xl border border-primary/30 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50">
+      <div class="absolute right-0 top-full mt-2 w-64 bg-black/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50">
         {/* User Info Section */}
-        <div class="px-4 py-4 border-b border-primary/20 bg-linear-to-br from-primary/10 to-transparent">
+        <div class="px-4 py-4 border-b border-primary/10 bg-linear-to-br from-primary/5 to-transparent">
           <div class="flex items-center gap-3">
             <img
               src="/media/avatar/avatar.png"

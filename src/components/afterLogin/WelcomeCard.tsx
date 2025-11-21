@@ -225,14 +225,12 @@ export function WelcomeCard() {
       {/* Navigation Arrows */}
       <button
         id="prev-slide"
-        class="absolute left-6 top-1/2 -translate-y-1/2 z-30 bg-primary/30 hover:bg-primary/50 backdrop-blur-lg border-2 border-primary hover:border-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-xl shadow-primary/30 group"
-      >
-      </button>
+        class="absolute left-6 bottom-8 z-30 bg-primary/30 hover:bg-primary/50 backdrop-blur-lg border-2 border-primary hover:border-white rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-xl shadow-primary/30 group"
+      ></button>
       <button
         id="next-slide"
-        class="absolute right-6 top-1/2 -translate-y-1/2 z-30 bg-primary/30 hover:bg-primary/50 backdrop-blur-lg border-2 border-primary hover:border-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-xl shadow-primary/30 group"
-      >
-      </button>
+        class="absolute right-6 bottom-8 z-30 bg-primary/30 hover:bg-primary/50 backdrop-blur-lg border-2 border-primary hover:border-white rounded-full w-8 h-8 flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-xl shadow-primary/30 group"
+      ></button>
 
       {/* Navigation Dots */}
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
@@ -333,16 +331,16 @@ export function WelcomeCard() {
 
   // Add Lucide icons to navigation buttons
   const prevIcon = createElement(ChevronLeft, {
-    size: 28,
+    size: 18,
     strokeWidth: 2.5,
-    color: "white"
+    color: "white",
   });
   prevBtn.appendChild(prevIcon);
 
   const nextIcon = createElement(ChevronRight, {
-    size: 28,
+    size: 18,
     strokeWidth: 2.5,
-    color: "white"
+    color: "white",
   });
   nextBtn.appendChild(nextIcon);
 
