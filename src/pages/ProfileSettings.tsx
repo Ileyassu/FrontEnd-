@@ -70,83 +70,85 @@ export function ProfileSettings() {
               <div class="grid grid-cols-2 gap-5">
                 {/* Profile Information Card */}
                 <div class="bg-primary-dark/40 backdrop-blur-xl border border-primary/20 rounded-xl p-5">
-                <h2 class="text-lg font-bold text-white mb-4">
-                  Profile Information
-                </h2>
+                  <h2 class="text-lg font-bold text-white mb-4">
+                    Profile Information
+                  </h2>
 
-                <div class="space-y-4">
-                  {/* Avatar Section */}
-                  <div class="flex items-center gap-4">
-                    <div class="relative group">
-                      <img
-                        id="profile-avatar"
-                        src="/media/avatar/avatar.png"
-                        alt="Profile"
-                        class="w-20 h-20 rounded-full border-3 border-primary/30 object-cover"
-                      />
-                      <label
-                        for="avatar-upload"
-                        class="absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
-                      >
-                        <span class="text-white text-sm font-medium">
-                          Change
-                        </span>
+                  <div class="space-y-4">
+                    {/* Avatar Section */}
+                    <div class="flex items-center gap-4">
+                      <div class="relative group">
+                        <img
+                          id="profile-avatar"
+                          src="/media/avatar/avatar.png"
+                          alt="Profile"
+                          class="w-20 h-20 rounded-full border-3 border-primary/30 object-cover"
+                        />
+                        <label
+                          for="avatar-upload"
+                          class="absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+                        >
+                          <span class="text-white text-sm font-medium">
+                            Change
+                          </span>
+                        </label>
+                        <input
+                          type="file"
+                          id="avatar-upload"
+                          accept="image/*"
+                          class="hidden"
+                        />
+                      </div>
+                      <div>
+                        <h3 class="text-white font-semibold text-lg">
+                          UserName
+                        </h3>
+                        <p class="text-secondary-text text-sm">
+                          user@example.com
+                        </p>
+                        <p class="text-primary/60 text-xs mt-1">
+                          Click on avatar to upload new photo
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Username Field */}
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-1.5">
+                        Username
                       </label>
                       <input
-                        type="file"
-                        id="avatar-upload"
-                        accept="image/*"
-                        class="hidden"
+                        type="text"
+                        value="UserName"
+                        class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
                       />
                     </div>
+
+                    {/* Email Field */}
                     <div>
-                      <h3 class="text-white font-semibold text-lg">UserName</h3>
-                      <p class="text-secondary-text text-sm">
-                        user@example.com
-                      </p>
-                      <p class="text-primary/60 text-xs mt-1">
-                        Click on avatar to upload new photo
-                      </p>
+                      <label class="block text-white text-sm font-medium mb-1.5">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        value="user@example.com"
+                        class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
+                      />
+                    </div>
+
+                    {/* Bio Field */}
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-1.5">
+                        Bio
+                      </label>
+                      <textarea
+                        rows="3"
+                        placeholder="Tell us about yourself..."
+                        class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all resize-none"
+                      ></textarea>
                     </div>
                   </div>
-
-                  {/* Username Field */}
-                  <div>
-                    <label class="block text-white text-sm font-medium mb-1.5">
-                      Username
-                    </label>
-                    <input
-                      type="text"
-                      value="UserName"
-                      class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
-                    />
-                  </div>
-
-                  {/* Email Field */}
-                  <div>
-                    <label class="block text-white text-sm font-medium mb-1.5">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      value="user@example.com"
-                      class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
-                    />
-                  </div>
-
-                  {/* Bio Field */}
-                  <div>
-                    <label class="block text-white text-sm font-medium mb-1.5">
-                      Bio
-                    </label>
-                    <textarea
-                      rows="3"
-                      placeholder="Tell us about yourself..."
-                      class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all resize-none"
-                    ></textarea>
-                  </div>
                 </div>
-              </div>
 
                 {/* Account Security Card */}
                 <div class="bg-primary-dark/40 backdrop-blur-xl border border-primary/20 rounded-xl p-5">
@@ -154,44 +156,44 @@ export function ProfileSettings() {
                     Account Security
                   </h2>
 
-                <div class="space-y-4">
-                  {/* Current Password */}
-                  <div>
-                    <label class="block text-white text-sm font-medium mb-1.5">
-                      Current Password
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Enter current password"
-                      class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
-                    />
-                  </div>
+                  <div class="space-y-4">
+                    {/* Current Password */}
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-1.5">
+                        Current Password
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Enter current password"
+                        class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
+                      />
+                    </div>
 
-                  {/* New Password */}
-                  <div>
-                    <label class="block text-white text-sm font-medium mb-1.5">
-                      New Password
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Enter new password"
-                      class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
-                    />
-                  </div>
+                    {/* New Password */}
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-1.5">
+                        New Password
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Enter new password"
+                        class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
+                      />
+                    </div>
 
-                  {/* Confirm Password */}
-                  <div>
-                    <label class="block text-white text-sm font-medium mb-1.5">
-                      Confirm New Password
-                    </label>
-                    <input
-                      type="password"
-                      placeholder="Confirm new password"
-                      class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
-                    />
+                    {/* Confirm Password */}
+                    <div>
+                      <label class="block text-white text-sm font-medium mb-1.5">
+                        Confirm New Password
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Confirm new password"
+                        class="w-full bg-black/40 border border-primary/20 rounded-lg px-3 py-2 text-sm text-white placeholder:text-secondary-text focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
               </div>
 
               {/* Preferences Card - Full Width */}

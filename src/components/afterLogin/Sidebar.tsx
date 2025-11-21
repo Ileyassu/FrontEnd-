@@ -14,7 +14,7 @@ export function Sidebar() {
     <aside class="sticky top-0 h-screen w-64 bg-primary-dark/50 backdrop-blur-sm flex flex-col overflow-y-auto">
       {/* Logo */}
       <div class="p-6 pb-8">
-        <a href="/Dashboard">
+        <a href="/dashboard">
           <img
             src="/media/logo/logo.png"
             alt="VSPACE Logo"
@@ -41,7 +41,7 @@ export function Sidebar() {
 
   // Menu items data
   const menuItems = [
-    { icon: Home, label: "Home", href: "/Dashboard", active: true },
+    { icon: Home, label: "Home", href: "/dashboard", active: true },
     { icon: Gamepad2, label: "Game", href: "/game", active: false },
     { icon: MessageSquare, label: "Chat", href: "/chat", active: false },
     { icon: Trophy, label: "Tournament", href: "/tournament", active: false },

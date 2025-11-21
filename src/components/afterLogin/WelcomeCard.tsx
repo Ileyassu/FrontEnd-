@@ -27,7 +27,7 @@ export function WelcomeCard() {
       ></div>
 
       {/* Slider Container */}
-      <div class="relative overflow-hidden h-[420px]">
+      <div class="relative overflow-hidden h-[520px]">
         <div
           id="slider-track"
           class="flex h-full"
