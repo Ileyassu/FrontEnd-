@@ -53,7 +53,10 @@ export function Leaderboard() {
             </div>
 
             {/* Stats Cards */}
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8" id="stats-container"></div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8"
+              id="stats-container"
+            ></div>
 
             {/* Main Content Grid: Leaderboard Table + Top Champions Card */}
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -80,7 +83,12 @@ export function Leaderboard() {
   const statsContainer = container.querySelector("#stats-container");
   stats.forEach((stat) => {
     statsContainer?.appendChild(
-      StatsCard({ label: stat.label, value: stat.value, icon: stat.icon, color: stat.color })
+      StatsCard({
+        label: stat.label,
+        value: stat.value,
+        icon: stat.icon,
+        color: stat.color,
+      })
     );
   });
 

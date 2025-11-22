@@ -20,9 +20,30 @@ export function TopChampionsCard() {
   ) as HTMLElement;
 
   const topPlayers: Player[] = [
-    { rank: 1, name: "NeonKnight", score: "9,850", avatar: "N", wins: 198, losses: 12 },
-    { rank: 2, name: "ShadowBlade", score: "8,420", avatar: "S", wins: 176, losses: 24 },
-    { rank: 3, name: "CyberWolf", score: "7,935", avatar: "C", wins: 165, losses: 30 },
+    {
+      rank: 1,
+      name: "NeonKnight",
+      score: "9,850",
+      avatar: "N",
+      wins: 198,
+      losses: 12,
+    },
+    {
+      rank: 2,
+      name: "ShadowBlade",
+      score: "8,420",
+      avatar: "S",
+      wins: 176,
+      losses: 24,
+    },
+    {
+      rank: 3,
+      name: "CyberWolf",
+      score: "7,935",
+      avatar: "C",
+      wins: 165,
+      losses: 30,
+    },
   ];
 
   const container = card.querySelector("#top-champions-container");
@@ -69,7 +90,9 @@ export function TopChampionsCard() {
     const winRate = (player.wins / (player.wins + player.losses)) * 100;
     const stats = document.createElement("div");
     stats.className = "text-secondary-text text-sm";
-    stats.textContent = `${player.wins}W - ${player.losses}L (${winRate.toFixed(1)}%)`;
+    stats.textContent = `${player.wins}W - ${player.losses}L (${winRate.toFixed(
+      1
+    )}%)`;
 
     infoWrapper.appendChild(name);
     infoWrapper.appendChild(stats);
